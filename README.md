@@ -27,13 +27,12 @@ The LDAP Self Service frontend can be run in a Docker container. A Dockerfile is
 
 To build:
 
-    cd docker
     build -t ldap-self-service .
     
-To run:
+To run directly without building:
 
     docker run \
-        -e "LDAP_REST_SERVICE_ENDPOINT=https://docker-ldap-self-service-rest.example.com"
+        -e "LDAP_REST_SERVICE_ENDPOINT=https://docker-ldap-self-service-rest.example.com" \
         -e "EDITABLE_FIELDS=[\"sn\", \"mobile\"]" \
         -p 8080:80 \
-        ldap-self-service
+        fchristl/ldap-self-service

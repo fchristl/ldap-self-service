@@ -32,7 +32,7 @@ To build:
 To run directly without building:
 
     docker run \
-        -e "LDAP_REST_SERVICE_ENDPOINT=https://docker-ldap-self-service-rest.example.com" \
+        -e "LDAP_SELF_REST_SERVICE_ENDPOINT=https://docker-ldap-self-service-rest.example.com" \
         -e "EDITABLE_FIELDS=[\"sn\", \"mobile\"]" \
         -p 8080:80 \
         fchristl/ldap-self-service

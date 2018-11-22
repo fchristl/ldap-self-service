@@ -6,6 +6,11 @@ attributes.
 It goes hand in hand with [LDAP Self REST Service](https://github.com/fchristl/ldap-self-rest-service) as a backend.
 
 ## Features
+
+![Login Screen](screenshots/login.png)
+
+![Login Screen](screenshots/edig.png)
+
 * Log in as a LDAP user
 * Edit any of the permitted attributes (e.g. name, your mobile number, ...)
 * Log out

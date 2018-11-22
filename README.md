@@ -1,27 +1,23 @@
-# LdapSelfService
+# LDAP Self Service
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.5.
+This is a simple Angular application that enables LDAP users to edit their own user
+attributes.
 
-## Development server
+It goes hand in hand with [LDAP Self REST Service](https://github.com/fchristl/ldap-self-rest-service) as a backend.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Features
+* Log in as a LDAP user
+* Edit any of the permitted attributes (e.g. name, your mobile number, ...)
+* Log out
 
-## Code scaffolding
+## Configuration
+In order to configure your own LDAP Self REST Service and therefore connect to your own
+LDAP, edit `assets/config.json`:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
+* Set `endpoint` to the URL where your LDAP Self REST Service is reachable.
+* Set `editableFields` to the attributes you want your users to be allowed to edit. This
+  normally corresponds to the `EDITABLE_FIELDS` varaible from LDAP Self REST Service.
+  
 ## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+To build a frontend with your configuration, run `ng build --prod`. Then copy the
+`dist` folder to wherever you want to host your frontend.

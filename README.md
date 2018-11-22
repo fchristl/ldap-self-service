@@ -9,7 +9,7 @@ It goes hand in hand with [LDAP Self REST Service](https://github.com/fchristl/l
 
 ![Login Screen](screenshots/login.png)
 
-![Login Screen](screenshots/edig.png)
+![Login Screen](screenshots/edit.png)
 
 * Log in as a LDAP user
 * Edit any of the permitted attributes (e.g. name, your mobile number, ...)

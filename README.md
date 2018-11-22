@@ -36,3 +36,17 @@ To run directly without building:
         -e "EDITABLE_FIELDS=[\"sn\", \"mobile\"]" \
         -p 8080:80 \
         fchristl/ldap-self-service
+
+### Docker Compose
+A [Docker Compose file](https://github.com/fchristl/ldap-self-rest-service/blob/master/docker-compose.yml)
+is available. It sets up an OpenLDAP server, a PhpLDAPAdmin instance and both
+the LDAP Self REST Service backend and the LDAP Self Service frontend.
+
+Download the file. To start, run `docker compose up`. Navigate to 
+[https://127.0.0.1:6443](https://127.0.0.1:6443) to open PhpLDAPAdmin. 
+
+LDAP Self REST Service looks for users in `cn=users,dc=example,dc=org`, so go ahead
+and create that group, and add some users under it.
+
+Now, you can go to [http://127.0.0.1:8080](http://127.0.0.1:8080) and log in as one
+of the users that you created.

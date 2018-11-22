@@ -1,6 +1,6 @@
 {
   "name": "ldap-self-service",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -47,5 +47,8 @@
     "ts-node": "~5.0.1",
     "tslint": "~5.9.1",
     "typescript": "~3.1.6"
-  }
+  },
+  "author": "Felix Christl",
+  "license": "BSD-3-Clause",
+  "repository": "https://github.com/fchristl/ldap-self-service.git"
 }

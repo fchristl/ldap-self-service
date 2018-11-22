@@ -21,3 +21,19 @@ LDAP, edit `assets/config.json`:
 ## Build
 To build a frontend with your configuration, run `ng build --prod`. Then copy the
 `dist` folder to wherever you want to host your frontend.
+
+## Run in Docker
+The LDAP Self Service frontend can be run in a Docker container. A Dockerfile is included.
+
+To build:
+
+    cd docker
+    build -t ldap-self-service .
+    
+To run:
+
+    docker run \
+        -e "LDAP_REST_SERVICE_ENDPOINT=https://docker-ldap-self-service-rest.example.com"
+        -e "EDITABLE_FIELDS=[\"sn\", \"mobile\"]" \
+        -p 8080:80 \
+        ldap-self-service

@@ -15,7 +15,7 @@ In order to configure your own LDAP Self REST Service and therefore connect to y
 LDAP, edit `assets/config.json`:
 
 * Set `endpoint` to the URL where your LDAP Self REST Service is reachable.
-* Set `editableFields` to the attributes you want your users to be allowed to edit. This
+* Set `editableAttributes` to the attributes you want your users to be allowed to edit. This
   normally corresponds to the `EDITABLE_FIELDS` varaible from LDAP Self REST Service.
   
 ## Build

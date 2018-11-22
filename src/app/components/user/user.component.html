@@ -1,7 +1,7 @@
 <mat-card>
   <h2>{{ user.dn }}</h2>
 
-  <ng-container *ngFor="let field; of editableFields">
+  <ng-container *ngFor="let field; of editableAttributes">
     <mat-form-field>
       <input matInput placeholder="{{ field }}" [(ngModel)]="user[field]"/>
     </mat-form-field>

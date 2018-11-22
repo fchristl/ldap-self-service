@@ -11,7 +11,7 @@ import {MatSnackBar} from '@angular/material';
 export class UserComponent implements OnInit {
 
   user: any = {};
-  editableFields: string[];
+  editableAttributes: string[];
 
   constructor(private userService: UserService,
               private configService: ConfigService,
@@ -19,7 +19,7 @@ export class UserComponent implements OnInit {
 
   ngOnInit() {
     this.userService.getUser().subscribe(user => this.user = user, () => this.user = {});
-    this.configService.editableFields$.subscribe(editableFields => this.editableFields = editableFields);
+    this.configService.editableAttributes$.subscribe(editableAttributes => this.editableAttributes = editableAttributes);
   }
 
 

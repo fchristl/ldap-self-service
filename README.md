@@ -8,7 +8,7 @@ It goes hand in hand with [LDAP Self REST Service](https://github.com/fchristl/l
 ## Features
 
 ![Login Screen](screenshots/login.png)
-
+<hr/>
 ![Login Screen](screenshots/edit.png)
 
 * Log in as a LDAP user

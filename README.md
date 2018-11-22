@@ -16,7 +16,7 @@ LDAP, edit `assets/config.json`:
 
 * Set `endpoint` to the URL where your LDAP Self REST Service is reachable.
 * Set `editableAttributes` to the attributes you want your users to be allowed to edit. This
-  normally corresponds to the `EDITABLE_FIELDS` varaible from LDAP Self REST Service.
+  normally corresponds to the `EDITABLE_ATTRIBUTES` varaible from LDAP Self REST Service.
   
 ## Build
 To build a frontend with your configuration, run `ng build --prod`. Then copy the
@@ -33,7 +33,7 @@ To run directly without building:
 
     docker run \
         -e "LDAP_SELF_REST_SERVICE_ENDPOINT=https://docker-ldap-self-service-rest.example.com" \
-        -e "EDITABLE_FIELDS=[\"sn\", \"mobile\"]" \
+        -e "EDITABLE_ATTRIBUTES=[\"sn\", \"mobile\"]" \
         -p 8080:80 \
         fchristl/ldap-self-service
 

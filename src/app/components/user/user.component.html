@@ -1,0 +1,11 @@
+<mat-card>
+  <h2>{{ user.dn }}</h2>
+
+  <ng-container *ngFor="let field; of editableFields">
+    <mat-form-field>
+      <input matInput placeholder="{{ field }}" [(ngModel)]="user[field]"/>
+    </mat-form-field>
+  </ng-container>
+
+  <button mat-raised-button color="primary" (click)="save()">Save</button>
+</mat-card>
